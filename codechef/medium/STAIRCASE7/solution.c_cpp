@@ -14,15 +14,18 @@ int main() {
 	    {
 	        cin>>r[i];
 	    }
-	    int count=0;
-	    for(int i=1;i<n;i++)
-	    {
-	        if(r[i]-r[i-1]!=1)
+	    map<int,int>m;
+	    int maxCount=0;
+	    for(int i=0;i<n;i++){
+	        int x=r[i]-i;
+	        m[x]++;
+	        if(m[x]>maxCount)
 	        {
-	            count++;
+	            maxCount=m[x];
 	        }
 	    }
-	    cout<<count<<endl;
+	    int answer=n-maxCount;
+	    cout<<answer<<endl;
 	}
 
 }

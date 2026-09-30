@@ -54,7 +54,7 @@ No
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:09:39.080Z  
+**Submitted:** 2026-09-30T15:13:52.405Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -68,14 +68,14 @@ int main() {
 	{
 	    int n,m;
 	    cin>>n>>m;
-	    int r=n+m;
+	    int r=n*m;
 	    if(r%2==0)
 	    {
-	        cout<<"No"<<endl;
+	        cout<<"Yes"<<endl;
 	    }
 	    else
 	    {
-	        cout<<"Yes"<<endl;
+	        cout<<"No"<<endl;
 	    }
 	}
 }

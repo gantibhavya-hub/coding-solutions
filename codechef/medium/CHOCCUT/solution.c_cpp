@@ -9,14 +9,14 @@ int main() {
 	{
 	    int n,m;
 	    cin>>n>>m;
-	    int r=n+m;
+	    int r=n*m;
 	    if(r%2==0)
 	    {
-	        cout<<"No"<<endl;
+	        cout<<"Yes"<<endl;
 	    }
 	    else
 	    {
-	        cout<<"Yes"<<endl;
+	        cout<<"No"<<endl;
 	    }
 	}
 }

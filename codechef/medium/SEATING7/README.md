@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:51:02.983Z  
+**Submitted:** 2026-09-30T15:52:18.989Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,12 +71,12 @@ int main() {
 	    int n,m,k;
 	    cin>>n>>m>>k;
 	    int a[n];
-	    for(int i=1;i<=m;i++)
+	    for(int i=1;i<=n;i++)
 	    {
 	        cin>>a[i];
 	    }
 	    vector<int>v;
-	    for(int i=1;i<=m;i++)
+	    for(int i=1;i<=n;i++)
 	    {
 	        if(i!=a[i])
 	        {

@@ -5,5 +5,5 @@ int main() {
 	// your code goes here
 	int b,h,c;
 	cin>>b>>h>>c;
-	cout<<b/2;
+	cout<<min(b/2,(h+c));
 }

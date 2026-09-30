@@ -58,7 +58,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:34:02.445Z  
+**Submitted:** 2026-09-30T15:37:15.052Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,15 +77,18 @@ int main() {
 	    {
 	        cin>>r[i];
 	    }
-	    int count=0;
-	    for(int i=1;i<n;i++)
-	    {
-	        if(r[i]-r[i-1]!=1)
+	    map<int,int>m;
+	    int maxCount=0;
+	    for(int i=0;i<n;i++){
+	        int x=r[i]-i;
+	        m[x]++;
+	        if(m[x]>maxCount)
 	        {
-	            count++;
+	            maxCount=m[x];
 	        }
 	    }
-	    cout<<count<<endl;
+	    int answer=n-maxCount;
+	    cout<<answer<<endl;
 	}
 
 }

@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:52:18.989Z  
+**Submitted:** 2026-09-30T15:55:23.988Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -70,24 +70,31 @@ int main() {
 	{
 	    int n,m,k;
 	    cin>>n>>m>>k;
-	    int a[n];
-	    for(int i=1;i<=n;i++)
+	    int a[m];
+	    for(int i=0;i<m;i++)
 	    {
 	        cin>>a[i];
 	    }
 	    vector<int>v;
 	    for(int i=1;i<=n;i++)
 	    {
-	        if(i!=a[i])
+	        bool occupied=false;
+	        for(int j=0;j<m;j++)
+	        {
+	            if(i==a[j])
+	            {
+	                occupied=true;
+	                break;
+	            }
+	        }
+	        if(!occupied)
 	        {
 	            v.push_back(i);
 	        }
 	    }
-	    int i=1;
-	    while(i<=k)
+	    for(int i=0;i<k;i++)
 	    {
 	        cout<<v[i]<<" ";
-	        i++;
 	    }
 	    cout<<endl;
 	}

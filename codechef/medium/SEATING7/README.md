@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:14:32.558Z  
+**Submitted:** 2026-09-30T15:51:02.983Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -64,7 +64,33 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,m,k;
+	    cin>>n>>m>>k;
+	    int a[n];
+	    for(int i=1;i<=m;i++)
+	    {
+	        cin>>a[i];
+	    }
+	    vector<int>v;
+	    for(int i=1;i<=m;i++)
+	    {
+	        if(i!=a[i])
+	        {
+	            v.push_back(i);
+	        }
+	    }
+	    int i=1;
+	    while(i<=k)
+	    {
+	        cout<<v[i]<<" ";
+	        i++;
+	    }
+	    cout<<endl;
+	}
 }
 
 ```

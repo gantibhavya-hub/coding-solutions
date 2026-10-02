@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool hasGroupsSizeX(vector<int>& deck) {
-        map<int,int>result;
+        unordered_map<int,int>result;
         for(int i=0;i<deck.size();i++)
         {
             result[deck[i]]++;

@@ -43,15 +43,15 @@ Explanation: No possible partition.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 27.17%)  
-**Memory:** 21.4 MB (beats 26.75%)  
-**Submitted:** 2026-10-02T16:29:37.135Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 21.3 MB (beats 85.55%)  
+**Submitted:** 2026-10-02T16:31:10.812Z  
 
 ```cpp
 class Solution {
 public:
     bool hasGroupsSizeX(vector<int>& deck) {
-        map<int,int>result;
+        unordered_map<int,int>result;
         for(int i=0;i<deck.size();i++)
         {
             result[deck[i]]++;

@@ -15,7 +15,7 @@ int main() {
 	    int left=0,right=0,ans=0;
 	    for(char ch=0;ch<n;ch++)
 	    {
-	        if(m.find(s[ch])!=string::npos)
+	        if(m.find(s[ch])==ch)
 	        {
 	            left++;
 	            right=0;
@@ -25,7 +25,7 @@ int main() {
 	            right++;
 	            left=0;
 	        }
-	        ans=max(ans,max(left,right))
+	        ans=max(ans,max(left,right));
 	    }
 	    cout<<ans<<endl;
 	    

@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:18:47.879Z  
+**Submitted:** 2026-10-07T15:25:16.891Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -74,16 +74,27 @@ int main() {
 	cin>>t;
 	while(t--)
 	{
-	    int n,m;
-	    cin>>n>>m;
+	    int n,p;
+	    cin>>n>>p;
 	    string s;
 	    cin>>s;
 	    string m="qwertasdfgzxcv";
 	    int left=0,right=0;
-	    for(char ch=0,ch<s.length();ch++)
+	    for(char ch=0;ch<n;ch++)
 	    {
-	        if()
+	        if(m.find(s[ch]))
+	        {
+	            left++;
+	            right=0;
+	        }
+	        else
+	        {
+	            right++;
+	            left=0;
+	        }
 	    }
+	    cout<<max(left,right)<<endl;
+	    
 	}
 }
 

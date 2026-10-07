@@ -6,7 +6,7 @@ int main() {
 	int x,k,y;
 	cin>>x>>k>>y;
 	int a=y/k;
-	if(a>=1 && a<=x)
+	if(y%k==0 && a<=x)
 	cout<<"YES";
 	else
 	cout<<"NO";

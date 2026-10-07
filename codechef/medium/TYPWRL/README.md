@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:28:51.213Z  
+**Submitted:** 2026-10-07T16:07:13.885Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,7 +82,7 @@ int main() {
 	    int left=0,right=0,ans=0;
 	    for(char ch=0;ch<n;ch++)
 	    {
-	        if(m.find(s[ch])!=string::npos)
+	        if(m.find(s[ch])==ch)
 	        {
 	            left++;
 	            right=0;
@@ -92,7 +92,7 @@ int main() {
 	            right++;
 	            left=0;
 	        }
-	        ans=max(ans,max(left,right))
+	        ans=max(ans,max(left,right));
 	    }
 	    cout<<ans<<endl;
 	    

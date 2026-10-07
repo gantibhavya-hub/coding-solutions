@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T16:07:13.885Z  
+**Submitted:** 2026-10-07T16:10:33.474Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -82,7 +82,7 @@ int main() {
 	    int left=0,right=0,ans=0;
 	    for(char ch=0;ch<n;ch++)
 	    {
-	        if(m.find(s[ch])==ch)
+	        if(m.find(s[ch])<m.length())
 	        {
 	            left++;
 	            right=0;

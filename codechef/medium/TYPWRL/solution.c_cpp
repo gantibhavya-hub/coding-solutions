@@ -15,7 +15,7 @@ int main() {
 	    int left=0,right=0,ans=0;
 	    for(char ch=0;ch<n;ch++)
 	    {
-	        if(m.find(s[ch])==ch)
+	        if(m.find(s[ch])<m.length())
 	        {
 	            left++;
 	            right=0;

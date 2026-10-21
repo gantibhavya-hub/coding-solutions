@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int x,y;
+	cin>>x>>y;
+	int count=0;
+	if(x<y)
+	{
+	    for(int i=x+1;i<y;i++)
+	    {
+	        count++;
+	    }
+	}
+	else
+	{
+	    for(int i=y+1;i<x;i++)
+	    {
+	        count++;
+	    }
+	}
+	cout<<count;
+}

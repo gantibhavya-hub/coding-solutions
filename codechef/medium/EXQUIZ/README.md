@@ -57,7 +57,7 @@ Test case $4$: Since the final score is $0$, all questions can be skipped.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-21T15:15:00.518Z  
+**Submitted:** 2026-10-21T15:31:46.018Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,21 @@ int main() {
 	{
 	    int n,s;
 	    cin>>n>>s;
-	    if(n<)
+	    int ans=-1;
+	    for(int c=0;c<=n;c++)
+	    {
+	        for(int w=0;c+w<=n;w++)
+	        {
+	            if(4*c-w==s)
+	            {
+	                if(ans==-1 || c+w<ans)
+	                {
+	                    ans=c+w;
+	                }
+	            }
+	        }
+	    }
+	    cout<<ans<<endl;
 	}
 }
 

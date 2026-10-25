@@ -1,0 +1,34 @@
+class Solution {
+public:
+    int countStaircase(vector<int>& nums) {
+        int n=nums.size();
+        long long ans=0;
+        for(int i=0;i<n;i++)
+        {
+            unordered_map<int,int>freq;
+            vector<int>o;
+            for(int j=i;j<n;j++)
+            {
+                if(freq[nums[j]]==0)
+                {
+                    o.push_back(nums[j]);
+                }
+                freq[nums[j]]++;
+                bool valid=true;
+                for(int p=0;p<o.size();p++)
+                {
+                if(freq[o[p]]!=p+1)
+                {
+                    valid=false;
+                    break;
+                }
+                }
+                if(valid)
+                {
+                    ans++;
+                }
+            }
+        }
+        return ans;
+    }
+};

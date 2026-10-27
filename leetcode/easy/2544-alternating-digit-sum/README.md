@@ -49,9 +49,9 @@ Explanation: (+8) + (-8) + (+6) + (-9) + (+9) + (-6) = 0.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 7.9 MB  
-**Submitted:** 2026-10-27T14:27:26.382Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.2 MB (beats 17.89%)  
+**Submitted:** 2026-10-27T14:28:01.076Z  
 
 ```cpp
 class Solution {
@@ -64,10 +64,11 @@ public:
             v.push_back(r);
             n/=10;
         }
+        reverse(v.begin(),v.end());
         long long sum=0;
         for(long long i=0;i<v.size();i++)
         {
-            if(i%2!=0)
+            if(i%2==0)
             {
                 sum+=v[i];
             }

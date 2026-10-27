@@ -8,10 +8,11 @@ public:
             v.push_back(r);
             n/=10;
         }
+        reverse(v.begin(),v.end());
         long long sum=0;
         for(long long i=0;i<v.size();i++)
         {
-            if(i%2!=0)
+            if(i%2==0)
             {
                 sum+=v[i];
             }

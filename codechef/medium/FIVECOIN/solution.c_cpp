@@ -11,7 +11,7 @@ int main() {
 	else
 	{
 	    int a=n/5;
-	    int m=n-a;
+	    int m=n-5*a;
 	    cout<<a+m;
 	}
 

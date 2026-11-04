@@ -10,7 +10,9 @@ int main() {
 	}
 	else
 	{
-	   cout<<1+(n-5);
+	    int a=n/5;
+	    int m=n-5*a;
+	    cout<<a+m;
 	}
 
 }

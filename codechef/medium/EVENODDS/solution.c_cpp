@@ -3,5 +3,33 @@ using namespace std;
 
 int main() {
 	// your code goes here
-
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cin>>n;
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        cin>>a[i];
+	    }
+	    int ans=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        int count=0;
+	        for(int j=i;j<n;j++)
+	        {
+	            if(a[j]%2!=0)
+	            {
+	                count++;
+	            }
+	            if(count%2==0)
+	            {
+	                ans=max(ans,j-i+1);
+	            }
+	        }
+	    }
+	    cout<<ans<<endl;
+	}
 }

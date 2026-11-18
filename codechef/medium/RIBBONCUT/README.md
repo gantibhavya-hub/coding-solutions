@@ -75,7 +75,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:32:20.343Z  
+**Submitted:** 2026-11-18T15:39:34.277Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,35 +85,13 @@ int main() {
 	// your code goes here
 	int n;
 	cin>>n;
-	if(n==1 || n==3 || n==5 || n==7 || n==11 || n==13 || n==17 || n==19)
+	if(n%3==0)
+	{
+	    cout<<"YES";
+	}
+	else
 	{
 	    cout<<"NO";
-	}
-	else if(n%2==0)
-	{
-	    int a=n-2;
-	    int r=n-a;
-	    if(2*r==a)
-	    {
-	        cout<<"YES";
-	    }
-	    else
-	    {
-	        cout<<"NO";
-	    }
-	}
-	else if(n%3==0)
-	{
-	    int a=n-3;
-	    int r=n-a;
-	    if(2*r==a)
-	    {
-	        cout<<"YES";
-	    }
-	    else
-	    {
-	        cout<<"NO";
-	    }
 	}
 }
 

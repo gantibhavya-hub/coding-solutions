@@ -63,7 +63,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:45:09.742Z  
+**Submitted:** 2026-11-18T15:49:43.615Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,29 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cin>>n;
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	    {
+	        cin>>a[i];
+	    }
+	    int total_sum=0;
+	    for(int i=0;i<n;i++)
+	    {
+	        total_sum+=a[i];
+	    }
+	    int min_sum=INT_MAX;
+	    for(int i=0;i<n-1;i++)
+	    {
+	        min_sum=min(min_sum,(a[i]+a[i+1])/2);
+	    }
+	    cout<<total_sum-min_sum<<endl;
+	}
 
 }
 

@@ -75,7 +75,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:31:32.593Z  
+**Submitted:** 2026-11-18T15:32:20.343Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -97,7 +97,10 @@ int main() {
 	    {
 	        cout<<"YES";
 	    }
-	    cout<<"NO";
+	    else
+	    {
+	        cout<<"NO";
+	    }
 	}
 	else if(n%3==0)
 	{
@@ -107,7 +110,10 @@ int main() {
 	    {
 	        cout<<"YES";
 	    }
-	    cout<<"NO";
+	    else
+	    {
+	        cout<<"NO";
+	    }
 	}
 }
 

@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	if(n==1 || n==3 || n==5 || n==7 || n==11 || n==13 || n==17 || n==19)
+	{
+	    cout<<"NO";
+	}
+	else if(n%2==0)
+	{
+	    int a=n/2;
+	    if(2*a==n)
+	    {
+	        cout<<"YES";
+	    }
+	}
+	else if(n%3==0)
+	{
+	    int a=n/3;
+	    if(2*a==n)
+	    {
+	        cout<<"YES";
+	    }
+	}
+}

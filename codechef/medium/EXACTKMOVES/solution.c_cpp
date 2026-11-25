@@ -12,7 +12,7 @@ int main() {
 	    int r=n%2;
 	    int m=n/2;
 	    int ans=r+m;
-	    if(ans==k)
+	    if(k<=n && 2*k>=n)
 	    {
 	        cout<<"YES"<<endl;
 	    }

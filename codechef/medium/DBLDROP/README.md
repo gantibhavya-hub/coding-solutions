@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T15:30:56.940Z  
+**Submitted:** 2026-11-25T15:46:06.715Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -85,14 +85,16 @@ int main() {
 	    {
 	        cin>>a[i];
 	    }
-	    int sum=0,max=INT_MIN;
+	    int maxi=INT_MIN;
 	    for(int i=0;i<n;i++)
 	    {
 	        int sum=0;
-	        for(int j=0;j<n;j++)
+	        a[i]=2*i;
+	        for(int j=i+1;j<n;j++)
 	        {
-	            
+	            sum=sum+a[i]+a[j];
 	        }
+	        maxi=max(maxi,sum-)
 	    }
 	}
 

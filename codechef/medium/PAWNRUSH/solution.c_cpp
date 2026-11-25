@@ -9,13 +9,13 @@ int main() {
 	{
 	    cout<<0;
 	}
-	else if(n==7)
+	else if(n==2)
 	{
-	    cout<<1;
+	    cout<<7-n;
 	}
 	else
 	{
-	    cout<<7-n;
+	    cout<<8-n;
 	}
 	
 }

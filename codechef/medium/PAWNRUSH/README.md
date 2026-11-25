@@ -61,7 +61,7 @@ The pawn first moves two rows, from row $2$ to row $4$, and then one row at a ti
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:51:54.159Z  
+**Submitted:** 2026-11-25T14:51:30.296Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -71,7 +71,11 @@ int main() {
 	// your code goes here
 	int n;
 	cin>>n;
-	if(n==2)
+	if(n==8)
+	{
+	    cout<<0;
+	}
+	else if(n==2)
 	{
 	    cout<<7-n;
 	}

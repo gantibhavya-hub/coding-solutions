@@ -60,7 +60,7 @@ YES
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T15:08:22.282Z  
+**Submitted:** 2026-11-25T15:13:19.903Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,7 +77,7 @@ int main() {
 	    int r=n%2;
 	    int m=n/2;
 	    int ans=r+m;
-	    if(ans==k)
+	    if(k<=n && 2*k>=n)
 	    {
 	        cout<<"YES"<<endl;
 	    }

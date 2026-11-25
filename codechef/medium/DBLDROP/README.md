@@ -66,7 +66,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T15:46:06.715Z  
+**Submitted:** 2026-11-25T15:53:26.859Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -80,22 +80,23 @@ int main() {
 	{
 	    int n;
 	    cin>>n;
-	    int a[n];
+	    long long a[n];
+	    long long sum=0;
+	    long long maxi=0;
 	    for(int i=0;i<n;i++)
 	    {
 	        cin>>a[i];
+	        sum+=a[i];
+	        maxi=max(maxi,a[i]);
 	    }
-	    int maxi=INT_MIN;
+	    long long ans=sum-maxi;
 	    for(int i=0;i<n;i++)
 	    {
-	        int sum=0;
-	        a[i]=2*i;
-	        for(int j=i+1;j<n;j++)
-	        {
-	            sum=sum+a[i]+a[j];
-	        }
-	        maxi=max(maxi,sum-)
+	        long long newSum=sum+a[i];
+	        long long newMax=max(maxi,2*a[i]);
+	        ans=max(ans,newSum-newMax);
 	    }
+	    cout<<ans<<endl;
 	}
 
 }
